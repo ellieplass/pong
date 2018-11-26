@@ -1,12 +1,3 @@
-////////////////////////////
-// Bouncing Ball with Obstacle
-// Sarah Page
-// CODE 1 - Fall 2018
-// Parson School of Design
-//
-// adapted from: https://processing.org/examples/bounce.html
-////////////////////////////
-
 
 import ddf.minim.*;
 Minim minim;
