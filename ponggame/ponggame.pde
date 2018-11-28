@@ -25,7 +25,7 @@ void setup() {
   mono = createFont("Chunkfive.ttf", 100);
   sourcecode = createFont("SourceCode.ttf", 20);
   size(500, 500);
-  xpos = width/2;
+  xpos = 180;
   ypos = height/2;
 }
 
