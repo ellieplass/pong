@@ -22,7 +22,7 @@ void setup() {
   minim = new Minim(this);
   mySound = minim.loadFile("gameover.wav");
   mySounda = minim.loadFile("win.wav");
-  mono = createFont("Chunkfive.ttf", 100);
+  mono = createFont("Chunkfive.ttf", 80);
   sourcecode = createFont("SourceCode.ttf", 20);
   size(500, 500);
   xpos = 180;
@@ -68,14 +68,14 @@ void draw() {
     Score++;
   }
    textFont(mono);
-   text("  " + Score1, -40, 495);
+   text("  " + Score1, 100, 495);
    fill(255);
-   text(" " + Score, 360, 495);
+   text(" " + Score, 300, 495);
    
   if (xpos > 420 || xpos < 80){
     background(255, 0, 0);
     textFont(mono);
-    text("YOU LOSE", 0, 275);
+    text("GAME OVER", 0, 275);
     textFont(sourcecode);
     fill(0);
     text("Player 1 Score:" + " " + Score1, 150, 400);
@@ -97,9 +97,9 @@ void draw() {
 }
 void keyPressed(){
     if(keyCode == UP){
-      recty = recty-40;
+      recty = recty-60;
     } else if (keyCode == DOWN){
-      recty = recty+40;
+      recty = recty+60;
     }
   
   }
